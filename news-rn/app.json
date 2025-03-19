@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "news-app",
+    "slug": "news-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/logo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Limelight-Regular.ttf",
+            "./assets/fonts/OpenSans-Light.ttf",
+            "./assets/fonts/OpenSans-Regular.ttf",
+            "./assets/fonts/OpenSans-Medium.ttf",
+            "./assets/fonts/OpenSans-SemiBold.ttf",
+            "./assets/fonts/OpenSans-Bold.ttf",
+            "./assets/fonts/OpenSans-ExtraBold.ttf",
+            "./assets/fonts/Domie-Regular.ttf",
+            "./assets/fonts/Domie-Medium.ttf",
+            "./assets/fonts/Domie-SemiBold.ttf",
+            "./assets/fonts/Domie-Bold.ttf"
+          ]
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

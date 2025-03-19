@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import "tailwindcss";
+
+:root {
+  --manrope: "Manrope", sans-serif;
+
+  --primary: #738ffe;
+  --secondary: #e6fda3;
+  --accent: #eef3e3;
+  --background: #ffffff;
+  --foreground: #09090b;
+  --hover: #f4f4f5;
+  --destructive: #ef4444;
+  --border: #e4e4e7;
+}
+
+@theme inline {
+  --font-manrope: var(--manrope);
+
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-hover: var(--hover);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+}
+
+@layer base {
+  body {
+    @apply font-manrope text-foreground bg-background h-full w-full;
+  }
+}
+
+@layer utilities {
+  .fluid {
+    @apply mx-auto w-full max-w-xl;
+  }
+}
